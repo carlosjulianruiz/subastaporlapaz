@@ -2,6 +2,11 @@ import path from "node:path";
 
 /** @type {import('@remix-run/dev').AppConfig} */
 export default {
+    browserNodeBuiltinsPolyfill: {
+    modules: {
+      querystring: true
+    }
+  },
   cacheDirectory: "./node_modules/.cache/remix",
   ignoredRouteFiles: ["**/.*", "**/*.test.{js,jsx,ts,tsx}"],
   publicPath: "/_static/build/",
