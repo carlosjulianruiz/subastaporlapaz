@@ -25,7 +25,7 @@
     "@aws-sdk/client-dynamodb": "^3.812.0",
     "@aws-sdk/lib-dynamodb": "^3.814.0",
     "@paralleldrive/cuid2": "^2.2.2",
-    "@remix-run/architect": "^1.1.3",
+    "@remix-run/architect": "^2.16.7",
     "@remix-run/css-bundle": "^2.16.7",
     "@remix-run/node": "^2.16.7",
     "@remix-run/react": "^2.16.7",
