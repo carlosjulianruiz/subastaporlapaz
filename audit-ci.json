@@ -1,0 +1,14 @@
+{
+  "low": true,
+  "moderate": true,
+  "high": false,
+  "critical": false,
+"allowlist": [
+    "GHSA-67mh-4wv8-2f99",  // esbuild
+    "GHSA-m6fv-jmcg-4jfg",  // send
+    "GHSA-pxg6-pf52-xh8x",  // cookie
+    "GHSA-rhx6-c78j-4q9w",  // path-to-regexp (1)
+    "GHSA-9wv6-86v2-598j",  // path-to-regexp (2)
+    "GHSA-f7f6-9jq7-3rqj"   // estree-util-value-to-estree
+  ]
+}

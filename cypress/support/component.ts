@@ -13,6 +13,7 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
+/* eslint-disable @typescript-eslint/no-namespace */
 // Import commands.js using ES2015 syntax:
 import './commands'
 

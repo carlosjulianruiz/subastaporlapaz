@@ -1,10 +1,10 @@
 /// <reference types="vitest" />
 /// <reference types="vite/client" />
 
-import { defineConfig } from "vitest/config";
+import { vitePlugin as remix } from "@remix-run/dev";
 import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
-import { vitePlugin as remix } from "@remix-run/dev";
+import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   plugins: [
