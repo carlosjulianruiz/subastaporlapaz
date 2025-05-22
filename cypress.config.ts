@@ -11,7 +11,7 @@ export default defineConfig({
       };
 
       on("task", {
-        log(message: unknown): null {
+        log: (message: unknown): null => {
           console.log(message);
           return null;
         },
