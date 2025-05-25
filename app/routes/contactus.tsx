@@ -21,10 +21,10 @@ export default function ContactPage() {
 
         <div className="mt-8 space-y-6 text-lg">
           <div>
-            📷 Instagram:{" "}
+            📷 Instagram:{"*"}
             <a
               href="https://instagram.com/asecc_coffee"
-              target="_blank"
+              target="/"
               rel="Asociacion Colombiana para la excelencia del cafe"
               className="text-blue-600 hover:underline"
             >
@@ -46,7 +46,7 @@ export default function ContactPage() {
             💬 WhatsApp:{" "}
             <a
               href="https://wa.me/3212026991"
-              target="_blank"
+              target="/"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
             >
