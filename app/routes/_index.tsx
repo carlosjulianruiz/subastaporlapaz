@@ -1,8 +1,10 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import Navbar from "./components/navbar"
+
 
 import { useOptionalUser } from "~/utils";
+
+import Navbar from "./components/navbar";
 
 export const meta: MetaFunction = () => [{ title: "Remix Notes" }];
 
