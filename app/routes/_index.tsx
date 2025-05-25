@@ -5,7 +5,6 @@ import { Link } from "@remix-run/react";
 import { useOptionalUser } from "~/utils";
 
 import Navbar from "./components/navbar";
-
 export const meta: MetaFunction = () => [{ title: "Remix Notes" }];
 
 export default function Index() {
