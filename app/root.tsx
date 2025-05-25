@@ -16,6 +16,7 @@ import stylesheet from "~/tailwind.css";
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  { rel:"icon", href:"/favicon.ico"},
 ];
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {

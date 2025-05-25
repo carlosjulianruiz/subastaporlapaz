@@ -6,10 +6,11 @@ export default function Navbar() {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
+            src="https://picsum.photos/200/300"
+            // className="h-8"
             alt="subasta por la paz"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -45,11 +46,11 @@ export default function Navbar() {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {[
-              { to: "#", label: "Home" },
-              { to: "#", label: "About" },
-              { to: "#", label: "Services" },
-              { to: "#", label: "Pricing" },
-              { to: "#", label: "Contact" },
+              { to: "/", label: "Home" },
+              { to: "#", label: "Fechas" },
+              { to: "#", label: "Inscripciones" },
+              { to: "#", label: "Videos" },
+              { to: "/contactus", label: "Contactanos" },
             ].map(({ to, label }, index) => (
               <li key={index}>
                 <Link
