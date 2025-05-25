@@ -1,9 +1,14 @@
-import type { Config } from "tailwindcss";
+const flowbitePlugin = require('flowbite/plugin');
 
-export default {
-  content: ["./app/**/*.{js,jsx,ts,tsx}"],
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",       // Remix app files
+    "./node_modules/flowbite/**/*.js",  // Flowbite components
+  ],
   theme: {
     extend: {},
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [
+    flowbitePlugin,                     // carga estilos y scripts automáticamente
+  ],
+};
