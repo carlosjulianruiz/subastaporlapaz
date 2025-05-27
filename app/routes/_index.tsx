@@ -11,9 +11,6 @@ export default function Index() {
   const user = useOptionalUser();
   return (
     <main className="relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center">
-
-       
-
       <div className="relative sm:pb-16 sm:pt-8">
         <Navbar />
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -21,20 +18,19 @@ export default function Index() {
             <div className="absolute inset-0">
               <img
                 className="h-full w-full object-cover"
-                src="https://user-images.githubusercontent.com/1500684/158276318-61064670-06c3-43f3-86e3-d624785b8ff7.jpg"
-                alt="Nirvana playing on stage with Kurt's jagstang guitar"
+                src="https://asecc.sfo2.digitaloceanspaces.com/subastaporlapaz/logo2_subasta.jpeg"
+                alt="subasta por la paz 2025, Bolivar Cauca"
               />
-              <div className="absolute inset-0 bg-[color:rgba(100,255,56,0.9)] mix-blend-multiply" />
+              <div className="absolute inset-0 bg-[color:rgba(213, 224, 13, 0.9)] mix-blend-multiply" />
             </div>
             <div className="relative px-4 pb-8 pt-16 sm:px-6 sm:pb-14 sm:pt-24 lg:px-8 lg:pb-20 lg:pt-32">
               <h1 className="text-center text-6xl font-extrabold tracking-tight sm:text-8xl lg:text-9xl">
                 <span className="block uppercase text-red-500 drop-shadow-md">
-                  Grunge Stack
+                  
                 </span>
               </h1>
               <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
-                Check the README.md file for instructions on how to get this
-                project deployed.
+                
               </p>
               <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                 {user ? (
@@ -76,7 +72,7 @@ export default function Index() {
           <div className="mt-6 flex flex-wrap justify-center gap-8">
             {[
               {
-                src: "https://user-images.githubusercontent.com/1500684/157991167-651c8fc5-2f72-4afa-94d8-2520ecbc5ebc.svg",
+                src: "https://user-images.githubusercontent.com/1500684/157991167-651cfc5-2f72-4afa-94d8-2520ecbc5ebc.svg",
                 alt: "AWS",
                 href: "https://aws.com",
               },

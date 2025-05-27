@@ -9,7 +9,7 @@ export default function Navbar() {
         
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="https://picsum.photos/200/300"
+            src="https://asecc.sfo2.digitaloceanspaces.com/subastaporlapaz/logo-32x32.png"
             // className="h-8"
             alt="subasta por la paz"
           />
