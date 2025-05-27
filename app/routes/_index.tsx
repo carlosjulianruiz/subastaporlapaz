@@ -38,15 +38,14 @@ export default function HomePage() {
       </section>
 
       {/* Sponsors Section */}
-      <section className="py-5 bg-[#FDE6BD]">
+      <section className="py-6 bg-[#fefaf1]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-
 
           {/* Logo principal destacado */}
           <div className="flex justify-center">
             <a
-              href="https://aws.com"
-              className="flex h-48 w-100 justify-center p-2 grayscale transition hover:grayscale-0 focus:grayscale-0"
+              href="https://www.cauca.gov.co/paginas/default.aspx"
+              className="flex h-[170px] w-[350px] justify-center p-1 grayscale transition hover:grayscale-0 focus:grayscale-0"
             >
               <img
                 alt="Gobernación del Cauca"
@@ -57,28 +56,28 @@ export default function HomePage() {
           </div>
 
           {/* Logos secundarios */}
-          <div className="flex flex-wrap justify-center gap-x-2 gap-y-2">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-1">
             {[
               {
                 src: "https://sfo2.digitaloceanspaces.com/asecc/subastaporlapaz/sponsors/logos-04.svg",
                 alt: "Subasta por la Paz",
-                href: "#",
+                href: "https://subastaporlapaz.org/",
               },
               {
                 src: "https://sfo2.digitaloceanspaces.com/asecc/subastaporlapaz/sponsors/logos-02.svg",
                 alt: "ASECC",
-                href: "#",
+                href: "https://www.asecc.org/",
               },
               {
                 src: "https://sfo2.digitaloceanspaces.com/asecc/subastaporlapaz/sponsors/logos-03.svg",
                 alt: "La Mejor Taza",
-                href: "#",
+                href: "https://auction.lamejortaza.com/",
               },
             ].map((img) => (
               <a
                 key={img.href}
                 href={img.href}
-                className="flex h-28 w-56 justify-center p-1 grayscale transition hover:grayscale-0 focus:grayscale-0"
+                className="flex h-28 w-48 justify-center p-1 grayscale transition hover:grayscale-0 focus:grayscale-0"
               >
                 <img alt={img.alt} src={img.src} className="object-contain" />
               </a>
@@ -86,6 +85,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
 
     </div>
   )
