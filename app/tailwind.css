@@ -1,7 +1,11 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Si usas Flowbite */
+@import "flowbite";
+
+
 
 
 

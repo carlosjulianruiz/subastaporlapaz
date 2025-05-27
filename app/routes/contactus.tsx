@@ -9,7 +9,7 @@ export const meta: MetaFunction = () => {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-white px-4 py-12 sm:px-6 lg:px-8">
+   <main className="min-h-screen bg-white px-4 py-12 sm:px-6 lg:px-8 mt-20">
       <Navbar />
       <div className="max-w-2xl mx-auto text-center">
         <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">

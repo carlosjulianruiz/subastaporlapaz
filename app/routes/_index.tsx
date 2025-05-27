@@ -1,143 +1,92 @@
-import type { MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
-
-import { useOptionalUser } from "~/utils";
-
+import {
+  FaCoffee,
+  FaHeart,
+  FaUsers,
+  FaCalendarAlt,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 import Navbar from "./components/navbar";
-
-export const meta: MetaFunction = () => [{ title: "Subasta por la Paz 2025" }];
-
-export default function Index() {
-  const user = useOptionalUser();
+export default function HomePage() {
   return (
-    <main className="relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center">
-      <div className="relative sm:pb-16 sm:pt-8">
-        <Navbar />
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
-            <div className="absolute inset-0">
-              <img
-                className="h-full w-full object-cover"
-                src="https://asecc.sfo2.digitaloceanspaces.com/subastaporlapaz/logo2_subasta.jpeg"
-                alt="subasta por la paz 2025, Bolivar Cauca"
-              />
-              <div className="absolute inset-0 bg-[color:rgba(213, 224, 13, 0.9)] mix-blend-multiply" />
-            </div>
-            <div className="relative px-4 pb-8 pt-16 sm:px-6 sm:pb-14 sm:pt-24 lg:px-8 lg:pb-20 lg:pt-32">
-              <h1 className="text-center text-6xl font-extrabold tracking-tight sm:text-8xl lg:text-9xl">
-                <span className="block uppercase text-red-500 drop-shadow-md">
-                  
-                </span>
-              </h1>
-              <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
-                
-              </p>
-              <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
-                {user ? (
-                  <Link
-                    to="/notes"
-                    className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-red-700 shadow-sm hover:bg-red-50 sm:px-8"
-                  >
-                    View Notes for {user.email}
-                  </Link>
-                ) : (
-                  <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                    <Link
-                      to="/join"
-                      className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-red-700 shadow-sm hover:bg-red-50 sm:px-8"
-                    >
-                      Sign up
-                    </Link>
-                    <Link
-                      to="/login"
-                      className="flex items-center justify-center rounded-md bg-red-500 px-4 py-3 font-medium text-white hover:bg-red-600"
-                    >
-                      Log In
-                    </Link>
-                  </div>
-                )}
-              </div>
-              <a href="https://remix.run">
-                <img
-                  src="https://user-images.githubusercontent.com/1500684/158298926-e45dafff-3544-4b69-96d6-d3bcc33fc76a.svg"
-                  alt="Remix"
-                  className="mx-auto mt-16 w-full max-w-[12rem] md:max-w-[16rem]"
-                />
-              </a>
-            </div>
-          </div>
+    <div className="min-h-screen bg-white scroll-smooth">
+      {/* Navbar */}
+
+      <Navbar />
+      {/* Hero Section */}
+      <section id="home" className="relative h-[85vh] flex items-center justify-center">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://asecc.sfo2.digitaloceanspaces.com/subastaporlapaz/logo2_subasta.jpeg"
+            alt="Subasta por la Paz Event"
+            className="w-full h-full object-cover"
+          />
+          {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div> */}
         </div>
 
-        <div className="mx-auto max-w-7xl px-4 py-2 sm:px-6 lg:px-8">
-          <div className="mt-6 flex flex-wrap justify-center gap-8">
+        {/* Hero Content */}
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6">
+          {/* <h1 className="text-5xl md:text-7xl font-bold mb-6 font-raleway animate-fade-in">Subasta por la Paz</h1> */}
+          <button className="bg-[#D91448] text-white hover:opacity-90 transition-all duration-300 rounded-lg px-8 py-4 text-lg font-nunito shadow-lg hover:shadow-xl transform hover:scale-105">
+            Ver Inscripciones
+          </button>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="py-5 bg-[#FDE6BD]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+
+          {/* Logo principal destacado */}
+          <div className="flex justify-center">
+            <a
+              href="https://aws.com"
+              className="flex h-48 w-100 justify-center p-2 grayscale transition hover:grayscale-0 focus:grayscale-0"
+            >
+              <img
+                alt="Gobernación del Cauca"
+                src="https://sfo2.digitaloceanspaces.com/asecc/subastaporlapaz/sponsors/logos_Mesa%20de%20trabajo%201.svg"
+                className="object-contain"
+              />
+            </a>
+          </div>
+
+          {/* Logos secundarios */}
+          <div className="flex flex-wrap justify-center gap-x-2 gap-y-2">
             {[
               {
-                src: "https://user-images.githubusercontent.com/1500684/157991167-651cfc5-2f72-4afa-94d8-2520ecbc5ebc.svg",
-                alt: "AWS",
-                href: "https://aws.com",
+                src: "https://sfo2.digitaloceanspaces.com/asecc/subastaporlapaz/sponsors/logos-04.svg",
+                alt: "Subasta por la Paz",
+                href: "#",
               },
               {
-                src: "https://user-images.githubusercontent.com/1500684/157991935-26c0d587-b866-49f5-af34-8f04be1c9df2.svg",
-                alt: "DynamoDB",
-                href: "https://aws.amazon.com/dynamodb/",
+                src: "https://sfo2.digitaloceanspaces.com/asecc/subastaporlapaz/sponsors/logos-02.svg",
+                alt: "ASECC",
+                href: "#",
               },
               {
-                src: "https://user-images.githubusercontent.com/1500684/157990874-31f015c3-2af7-4669-9d61-519e5ecfdea6.svg",
-                alt: "Architect",
-                href: "https://arc.codes",
-              },
-              {
-                src: "https://user-images.githubusercontent.com/1500684/157764276-a516a239-e377-4a20-b44a-0ac7b65c8c14.svg",
-                alt: "Tailwind",
-                href: "https://tailwindcss.com",
-              },
-              {
-                src: "https://user-images.githubusercontent.com/1500684/157764454-48ac8c71-a2a9-4b5e-b19c-edef8b8953d6.svg",
-                alt: "Cypress",
-                href: "https://www.cypress.io",
-              },
-              {
-                src: "https://user-images.githubusercontent.com/1500684/157772386-75444196-0604-4340-af28-53b236faa182.svg",
-                alt: "MSW",
-                href: "https://mswjs.io",
-              },
-              {
-                src: "https://user-images.githubusercontent.com/1500684/157772447-00fccdce-9d12-46a3-8bb4-fac612cdc949.svg",
-                alt: "Vitest",
-                href: "https://vitest.dev",
-              },
-              {
-                src: "https://user-images.githubusercontent.com/1500684/157772662-92b0dd3a-453f-4d18-b8be-9fa6efde52cf.png",
-                alt: "Testing Library",
-                href: "https://testing-library.com",
-              },
-              {
-                src: "https://user-images.githubusercontent.com/1500684/157772934-ce0a943d-e9d0-40f8-97f3-f464c0811643.svg",
-                alt: "Prettier",
-                href: "https://prettier.io",
-              },
-              {
-                src: "https://user-images.githubusercontent.com/1500684/157772990-3968ff7c-b551-4c55-a25c-046a32709a8e.svg",
-                alt: "ESLint",
-                href: "https://eslint.org",
-              },
-              {
-                src: "https://user-images.githubusercontent.com/1500684/157773063-20a0ed64-b9f8-4e0b-9d1e-0b65a3d4a6db.svg",
-                alt: "TypeScript",
-                href: "https://typescriptlang.org",
+                src: "https://sfo2.digitaloceanspaces.com/asecc/subastaporlapaz/sponsors/logos-03.svg",
+                alt: "La Mejor Taza",
+                href: "#",
               },
             ].map((img) => (
               <a
                 key={img.href}
                 href={img.href}
-                className="flex h-16 w-32 justify-center p-1 grayscale transition hover:grayscale-0 focus:grayscale-0"
+                className="flex h-28 w-56 justify-center p-1 grayscale transition hover:grayscale-0 focus:grayscale-0"
               >
                 <img alt={img.alt} src={img.src} className="object-contain" />
               </a>
             ))}
           </div>
         </div>
-      </div>
-    </main>
-  );
+      </section>
+
+    </div>
+  )
 }
