@@ -21,21 +21,20 @@ export default function Navbar() {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-gray-700 hover:text-[#D91448] transition-colors duration-300 font-nunito">
+            <Link to="/" className="text-gray-700 hover:text-[#D91448] transition-colors duration-300 font-nunito">
               Home
-            </a>
+            </Link>
             <a
               href="#fechas"
               className="text-gray-700 hover:text-[#D91448] transition-colors duration-300 font-nunito"
             >
               Fechas
             </a>
-            <a
-              href="/inscripciones"
-              className="text-gray-700 hover:text-[#D91448] transition-colors duration-300 font-nunito"
-            >
+            <Link to="/inscripciones"
+              className="text-gray-700 hover:text-[#D91448] transition-colors duration-300 font-nunito">
+            
               Inscripciones
-            </a>
+            </Link>
             <a
               href="#videos"
               className="text-gray-700 hover:text-[#D91448] transition-colors duration-300 font-nunito"
