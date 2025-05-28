@@ -1,5 +1,6 @@
-import Navbar from "./components/navbar";
 import { Link } from "@remix-run/react";
+
+import Navbar from "./components/navbar";
 
 export default function HomePage() {
   return (
