@@ -98,9 +98,6 @@ module.exports = {
 // Vitest
 {
   files: ["**/*.test.{js,ts,jsx,tsx}"],
-  env: {
-    "vitest/globals": true,
-  },
   plugins: [],
   rules: {},
 },
