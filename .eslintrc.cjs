@@ -103,7 +103,7 @@ module.exports = {
   },
   plugins: [],
   rules: {},
-}
+},
 
     // Cypress
     {
