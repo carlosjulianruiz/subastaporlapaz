@@ -95,28 +95,15 @@ module.exports = {
       extends: ["plugin:markdown/recommended-legacy", "prettier"],
     },
 
-    // Jest/Vitest
-    {
-      files: ["**/*.test.{js,jsx,ts,tsx}"],
-      plugins: ["jest", "jest-dom", "testing-library"],
-      extends: [
-        "plugin:jest/recommended",
-        "plugin:jest-dom/recommended",
-        "plugin:testing-library/react",
-        "prettier",
-      ],
-      env: {
-        "jest/globals": true,
-      },
-      settings: {
-        jest: {
-          // we're using vitest which has a very similar API to jest
-          // (so the linting plugins work nicely), but it means we have to explicitly
-          // set the jest version.
-          version: 28,
-        },
-      },
-    },
+// Vitest
+{
+  files: ["**/*.test.{js,ts,jsx,tsx}"],
+  env: {
+    "vitest/globals": true,
+  },
+  plugins: [],
+  rules: {},
+}
 
     // Cypress
     {
