@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className="relative">
               <img
                 src="https://asecc.sfo2.digitaloceanspaces.com/subastaporlapaz/logo-32x32.png"
-                // className="h-8"
+
                 alt="subasta por la paz"
               />
             </div>
@@ -42,12 +42,14 @@ export default function Navbar() {
             >
               Videos
             </a>
-            <a
-              href="contactus"
-              className="text-gray-700 hover:text-[#D91448] transition-colors duration-300 font-nunito"
-            >
+
+            <Link to="/contactus" className="text-gray-700 hover:text-[#D91448] transition-colors duration-300 font-nunito">
+              
+            
               Contáctanos
-            </a>
+
+            </Link>
+          
           </div>
 
           {/* Auth Buttons */}
