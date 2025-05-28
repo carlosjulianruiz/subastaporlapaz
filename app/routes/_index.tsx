@@ -1,15 +1,3 @@
-// import {
-//   FaCoffee,
-//   FaHeart,
-//   FaUsers,
-//   FaCalendarAlt,
-//   FaEnvelope,
-//   FaPhoneAlt,
-//   FaFacebookF,
-//   FaInstagram,
-//   FaTwitter,
-// } from "react-icons/fa";
-
 
 import Navbar from "./components/navbar";
 export default function HomePage() {
