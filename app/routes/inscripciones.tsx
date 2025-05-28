@@ -3,22 +3,22 @@ import Navbar from "./components/navbar";
 export default function InscripcionLotes() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-        <Navbar />
-      <div className="mb-8">
-       
-      </div>
-        <img
-          src="https://sfo2.digitaloceanspaces.com/asecc/subastaporlapaz/sponsors/logos-04.svg"
-          alt="Subasta por la Paz 2025"
-          className="h-20 mx-auto"
-        />
-      <h1 className="text-3xl font-bold text-center mb-6">   
-            Inscripción de Lotes
+      <Navbar />
+      <div className="mb-8"></div>
+
+      <img
+        src="https://sfo2.digitaloceanspaces.com/asecc/subastaporlapaz/sponsors/logos-04.svg"
+        alt="Subasta por la Paz 2025"
+        className="h-20 mx-auto"
+      />
+
+      <h1 className="text-3xl font-bold text-center mb-6">
+        Inscripción de Lotes
       </h1>
 
       <p className="mb-4">
         Los caficultores que deseen participar en el concurso
-        <strong> "SUBASTA POR LA PAZ 2025" </strong>
+        <strong> &quot;SUBASTA POR LA PAZ 2025&quot; </strong>
         deben entregar un lote de café pergamino seco junto con el formulario
         de inscripción en uno de los Puntos de Entrega Autorizados. Los puntos
         de Acopio recibirán el café desde el <strong>25 de mayo</strong> al
@@ -42,16 +42,42 @@ export default function InscripcionLotes() {
         <thead>
           <tr className="bg-gray-100">
             <th className="border px-4 py-2">Proceso</th>
-            <th className="border px-4 py-2">Peso Mínimo (kg) <br></br>Café Pergamino Seco</th>
-            <th className="border px-4 py-2">Peso Máximo (kg)<br></br>Café Pergamino Seco</th>
+            <th className="border px-4 py-2">
+              Peso Mínimo (kg) <br />
+              Café Pergamino Seco
+            </th>
+            <th className="border px-4 py-2">
+              Peso Máximo (kg) <br />
+              Café Pergamino Seco
+            </th>
           </tr>
         </thead>
         <tbody>
-          <tr><td className="border px-4 py-2">Anaeróbicos Lavados</td><td className="border px-4 py-2">27</td><td className="border px-4 py-2">260</td></tr>
-          <tr><td className="border px-4 py-2">Anaeróbicos Naturales</td><td className="border px-4 py-2">43</td><td className="border px-4 py-2">410</td></tr>
-          <tr><td className="border px-4 py-2">Naturales</td><td className="border px-4 py-2">43</td><td className="border px-4 py-2">425</td></tr>
-          <tr><td className="border px-4 py-2">Honey</td><td className="border px-4 py-2">32</td><td className="border px-4 py-2">315</td></tr>
-          <tr><td className="border px-4 py-2">Lavados</td><td className="border px-4 py-2">27</td><td className="border px-4 py-2">265</td></tr>
+          <tr>
+            <td className="border px-4 py-2">Anaeróbicos Lavados</td>
+            <td className="border px-4 py-2">27</td>
+            <td className="border px-4 py-2">260</td>
+          </tr>
+          <tr>
+            <td className="border px-4 py-2">Anaeróbicos Naturales</td>
+            <td className="border px-4 py-2">43</td>
+            <td className="border px-4 py-2">410</td>
+          </tr>
+          <tr>
+            <td className="border px-4 py-2">Naturales</td>
+            <td className="border px-4 py-2">43</td>
+            <td className="border px-4 py-2">425</td>
+          </tr>
+          <tr>
+            <td className="border px-4 py-2">Honey</td>
+            <td className="border px-4 py-2">32</td>
+            <td className="border px-4 py-2">315</td>
+          </tr>
+          <tr>
+            <td className="border px-4 py-2">Lavados</td>
+            <td className="border px-4 py-2">27</td>
+            <td className="border px-4 py-2">265</td>
+          </tr>
         </tbody>
       </table>
 
