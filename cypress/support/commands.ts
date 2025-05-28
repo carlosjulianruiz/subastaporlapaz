@@ -37,7 +37,9 @@ function login({
   email?: string;
 } = {}) {
   cy.then(() => ({ email })).as("user");
-  cy.request("POST", "/__tests/create-user", { email });
+const baseUrl = Cypress.config().baseUrl;
+cy.request("POST", `${baseUrl}/__tests/create-user`, { email });
+
   return cy.get("@user");
 }
 
