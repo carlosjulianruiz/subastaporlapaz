@@ -1,6 +1,5 @@
-/// <reference types="vitest" />
-
 import { expect, test } from "vitest";
+
 import { validateEmail } from "./utils";
 
 test("validateEmail returns false for non-emails", () => {
