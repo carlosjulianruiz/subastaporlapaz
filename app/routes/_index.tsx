@@ -22,9 +22,9 @@ export default function HomePage() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://asecc.sfo2.digitaloceanspaces.com/subastaporlapaz/logo2_subasta.jpeg"
+            src="https://sfo2.digitaloceanspaces.com/asecc/subastaporlapaz/sponsors/logos-04.svg"
             alt="Subasta por la Paz Event"
-            className="w-full h-full object-cover"
+            className="max-w-full h-auto object-cover"
           />
           {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div> */}
         </div>

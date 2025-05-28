@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 mt-6">
             <div className="relative">
               <img
                 src="https://asecc.sfo2.digitaloceanspaces.com/subastaporlapaz/logo-32x32.png"
@@ -31,7 +31,7 @@ export default function Navbar() {
               Fechas
             </a>
             <a
-              href="#inscripciones"
+              href="/inscripciones"
               className="text-gray-700 hover:text-[#D91448] transition-colors duration-300 font-nunito"
             >
               Inscripciones
