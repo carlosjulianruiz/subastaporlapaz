@@ -3,7 +3,7 @@ import { defineConfig } from "cypress";
 export default defineConfig({
   e2e: {
     supportFile: "cypress/support/e2e.ts",
-    setupNodeEvents(_on, _config) {
+    setupNodeEvents() {
       // Puedes agregar tareas si es necesario
     },
   },
