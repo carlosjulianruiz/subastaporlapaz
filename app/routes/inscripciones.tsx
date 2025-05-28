@@ -1,5 +1,3 @@
-import { MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
 import Navbar from "./components/navbar";
 
 export default function InscripcionLotes() {
