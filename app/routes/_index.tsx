@@ -1,19 +1,20 @@
-import {
-  FaCoffee,
-  FaHeart,
-  FaUsers,
-  FaCalendarAlt,
-  FaEnvelope,
-  FaPhoneAlt,
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-} from "react-icons/fa";
+// import {
+//   FaCoffee,
+//   FaHeart,
+//   FaUsers,
+//   FaCalendarAlt,
+//   FaEnvelope,
+//   FaPhoneAlt,
+//   FaFacebookF,
+//   FaInstagram,
+//   FaTwitter,
+// } from "react-icons/fa";
+
+
 import Navbar from "./components/navbar";
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white scroll-smooth">
-      {/* Navbar */}
 
       <Navbar />
       {/* Hero Section */}
@@ -75,7 +76,7 @@ export default function HomePage() {
               },
             ].map((img) => (
               <a
-                key={img.href}
+                key={img.alt}
                 href={img.href}
                 className="flex h-28 w-48 justify-center p-1 grayscale transition hover:grayscale-0 focus:grayscale-0"
               >
