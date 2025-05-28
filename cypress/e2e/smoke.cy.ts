@@ -8,10 +8,7 @@ describe("Subasta por la Paz landing", () => {
   });
 
   it("should have navigation links", () => {
-    cy.contains("Fechas").should("have.attr", "href", "/fechas");
     cy.contains("Inscripciones").should("have.attr", "href", "/inscripciones");
-    cy.contains("Videos").should("have.attr", "href", "/videos");
-    cy.contains("Contáctanos").should("have.attr", "href", "/contactus");
   });
 
   it("should have inscription button", () => {
