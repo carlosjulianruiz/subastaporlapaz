@@ -2,8 +2,9 @@ import Navbar from "./components/navbar";
 
 export default function InscripcionLotes() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-8">
-      <Navbar />
+    <>
+    <Navbar />
+     <main className="max-w-4xl mx-auto px-4 py-8">
       <div className="mb-8"></div>
 
       <img
@@ -111,5 +112,7 @@ export default function InscripcionLotes() {
         <li>Broca: <strong>máximo 2%</strong></li>
       </ul>
     </main>
+    </>
+   
   );
 }
