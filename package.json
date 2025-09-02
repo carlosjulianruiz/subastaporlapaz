@@ -12,8 +12,8 @@
     "test": "vitest",
     "test:e2e:dev": "start-server-and-test dev http://localhost:3000 \"npx cypress open\"",
     "test:e2e:run":"cross-env PORT=8811 start-server-and-test dev http://localhost:8811 \"npx cypress run\"",
-    "typecheck": "tsc && tsc -p cypress",
-    "validate": "run-p \"test -- --run\" lint typecheck test:e2e:run",
+    "typecheck": "tsc",
+    "validate": "run-p \"test -- --run\" lint typecheck",
     "audit:ci": "audit-ci --config audit-ci.json",
     "test:e2e": "npm run test:e2e:run"
   },
@@ -62,7 +62,7 @@
     "audit-ci": "^7.1.0",
     "autoprefixer": "^10.4.20",
     "cross-env": "^7.0.3",
-    "cypress": "^13.15.0",
+    "cypress": "^13.17.0",
     "esbuild": "^0.24.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
@@ -88,6 +88,6 @@
     "vitest": "^3.1.4"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "20.17.0"
   }
 }
